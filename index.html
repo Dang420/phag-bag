@@ -9,32 +9,34 @@
   </header>
 
   <div class="grid-container">
-    <div class="card hero-card">
-      <img src="https://i.postimg.cc/7ZWH8S86/Screenshot_20251229_000215_Gallery(1).jpg" alt="PHAG Lifestyle">
-      <div class="card-overlay">The Collection</div>
-    </div>
-
-    <div class="card qr-card">
-      <img src="https://i.postimg.cc/s2fmBTSp/1766965606791.png" alt="Scan to Pay" id="mainQr">
-      <div class="button-container">
-        <button class="pulse-btn" onclick="openFullQR()">Tap to Full</button>
-        <button class="pay-btn" onclick="redirectToPay()">Click to Pay</button>
-      </div>
-    </div>
-
     <div class="card">
-      <img src="https://i.postimg.cc/FHVGsMYD/1766967776242.png" alt="PHAG Style">
-      <div class="card-overlay">Exclusive Design</div>
+      <img src="https://i.postimg.cc/7ZWH8S86/Screenshot_20251229_000215_Gallery(1).jpg" alt="PHAG Lifestyle">
+    </div>
+
+    <div class="card payment-card">
+      <div class="product-info">
+        <h3>SELECT YOUR STYLE</h3>
+
+        <button class="pay-btn" onclick="checkout('prod_ThELYVj3Q9PlEe')">
+          Buy Style A <span>(ID: ..PlEe)</span>
+        </button>
+
+        <button class="pay-btn" onclick="checkout('prod_ThEIjxsQ5cXkCq')">
+          Buy Style B <span>(ID: ..kCq)</span>
+        </button>
+
+        <button class="pay-btn" onclick="checkout('prod_Tgyq6AoVo3hXp6')">
+          Buy Style C <span>(ID: ..Xp6)</span>
+        </button>
+      </div>
+
+      <button class="pulse-btn" onclick="openFullQR()">Tap for QR Code</button>
     </div>
   </div>
 
   <div id="qrOverlay" class="lightbox" onclick="closeFullQR()">
     <img src="https://i.postimg.cc/s2fmBTSp/1766965606791.png" alt="Full QR">
-    <p>Tap anywhere to close</p>
+    <p>Tap to close</p>
   </div>
-
-  <footer class="footer">
-    <p>Follow the movement @PHAG_Official</p>
-  </footer>
 </div>
 <script src="./script.js"></script></body></html>
